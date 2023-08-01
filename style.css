@@ -1,0 +1,179 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 0;
+    padding: 0;
+    background-color: black;
+    background-image: url('./img.jpg'); 
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .nav {
+    text-transform: uppercase;
+    height: 59px;
+    width: 100%;
+    letter-spacing: 1px;
+    background-color: white;
+  }
+  
+  .container {
+    max-width: 55%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 33px;
+    font-weight: bold;
+    margin: auto;
+    color: teal;
+  }
+  
+  h2 {
+    text-align: center;
+    color: #007BFF;
+    margin-bottom: 20px;
+  }
+  
+  form {
+    display: grid;
+    grid-template-columns: 150px 1fr;
+    grid-gap: 10px;
+    margin: auto;
+    padding: 30px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  input[type="text"],
+  select,
+  input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  button {
+    padding: 10px 13px;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table th,
+  table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  table th:last-child,
+  table td:last-child {
+    text-align: center;
+  }
+  
+  /* Table Formatting */
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Table Animation */
+  
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      transform: translateY(20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+  
+  table {
+    animation: fadeIn 0.5s ease;
+  }
+  
+  tr {
+    animation: slideIn 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  
+  /* On screens smaller than 600px */
+  @media screen and (max-width: 600px) {
+    .container {
+      padding: 10px;
+    }
+  
+    form {
+      grid-template-columns: 1fr;
+    }
+  
+    h1 {
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+  }
+  
+  /* On screens smaller than 400px */
+  @media screen and (max-width: 400px) {
+    h1 {
+      font-size: 20px;
+    }
+  
+    form {
+      grid-gap: 5px;
+    }
+  
+    input[type="text"],
+    select,
+    input[type="number"] {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    button {
+      font-size: 14px;
+      padding: 10px 20px;
+    }
+  
+    table th,
+    table td {
+      padding: 12px;
+    }
+  }
+  
